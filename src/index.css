@@ -1,0 +1,17 @@
+
+@import './colors.css';
+
+.text-blue {
+  color: var(--blue-color);
+}
+.text-red {
+  color: var(--red-color);
+}
+.loading {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+
+.loading-loaded {
+  filter: blur(0);
+}
