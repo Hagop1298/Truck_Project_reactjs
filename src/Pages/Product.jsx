@@ -50,7 +50,7 @@ const Products = () => {
                 <img src={item.img} className="card-img-top loading" alt={item.title}
                      style={{height: "200px", objectFit: "cover"}}
                      onLoad={(e) => e.target.classList.replace("loading", "loading-loaded")}/>
-                <div className="card-body" style={{borderBottom: "1px solid #E5E7EB"}}>
+                <div className="card-body" style={{borderBottom: "1px solid #E5E7EB",  minHeight: "180px", }}>
                     <h5 className="card-title" style={{
                         fontSize: "20px",
                         fontWeight: "700",

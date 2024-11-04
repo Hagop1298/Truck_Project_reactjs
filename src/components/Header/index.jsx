@@ -43,7 +43,7 @@ const Header = () => {
                 </Box>
               </div>
 
-              <div className="col-md-6 col-12 d-flex flex-column align-items-start justify-content-start">
+              <div className="col-md-4 col-12 d-flex flex-column align-items-start justify-content-end">
                 <Box display="flex" alignItems="center" justifyContent="space-between" flexDirection="row">
                   <FaMapMarkerAlt className="me-2 text-red" />
                   <a

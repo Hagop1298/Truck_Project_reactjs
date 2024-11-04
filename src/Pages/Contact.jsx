@@ -23,6 +23,7 @@ function ContactUs() {
             last_name: formData.lastName,
             from_name: `${formData.firstName} ${formData.lastName}`,
             email_id: formData.email,
+            phone: formData.phone,
             message: formData.message,
         };
 
@@ -57,7 +58,7 @@ function ContactUs() {
                 Contact Us
             </p>
 
-            <div className="row container d-flex justify-content-between align-items-start">
+            <div className="row container-fluid d-flex justify-content-between align-items-start">
                 <div className="col-12 col-md-5">
                     <div className="list-unstyled pt-4" style={{ color: "#184374", fontWeight: "500", fontSize: "18px" }}>
                         <div className="mb-2">
@@ -90,7 +91,7 @@ function ContactUs() {
                                        placeholder="First Name"
                                        required
                                        onChange={handleChange}
-                                       className="form-control" />
+                                       className="form-control"/>
                             </div>
                             <div className="col-12 col-md-6 mb-3">
                                 <input type="text"
@@ -98,7 +99,7 @@ function ContactUs() {
                                        placeholder="Last Name"
                                        required
                                        onChange={handleChange}
-                                       className="form-control" />
+                                       className="form-control"/>
                             </div>
                         </div>
                         <div className="mb-3">
@@ -107,7 +108,16 @@ function ContactUs() {
                                    name="email"
                                    placeholder="Example@gmail.com"
                                    required
-                                   onChange={handleChange} />
+                                   onChange={handleChange}/>
+                        </div>
+                        <div className="mb-3">
+                            <input type="tel"
+                                   className="form-control"
+                                   id="phone"
+                                   name="phone"
+                                   placeholder="Phone Number"
+                                   required
+                                   onChange={handleChange}/>
                         </div>
                         <div className="mb-3">
                             <textarea
@@ -115,7 +125,7 @@ function ContactUs() {
                                 name="message"
                                 placeholder="Message"
                                 required
-                                onChange={handleChange} />
+                                onChange={handleChange}/>
                         </div>
                         <div className="d-flex justify-content-end">
                             <button type="submit" className="btn btn-danger btn-lg">Send Message</button>

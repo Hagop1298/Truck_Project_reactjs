@@ -1,6 +1,7 @@
 import React from "react";
 import {useState} from "react";
 import emailjs from "emailjs-com";
+import {FaEnvelope} from "react-icons/fa";
 
 const BuyMyCar = () => {
     const [formData, setFormData] = useState({
@@ -1280,9 +1281,23 @@ const BuyMyCar = () => {
                             }}
                         >
                             Please email to{" "}
-                            <span style={{color: "#405FF2"}}> sales@asveuroasia.com </span>
+                            <a
+                                href="mailto:accounts@jetis.com.au"
+                                target="_blank"
+                                className="text-center text-semibold"
+                                style={{color: "#405FF2", textDecoration: "none"}}
+                            >
+                                accounts@jetis.com.au
+                            </a>
                             or call on:
-                            <span style={{color: "#405FF2"}}> (02) 6944 9213</span>
+                            <span>
+                            <a
+                                href="tel:0260759999"
+                                className="text-center text-semibold"
+                                style={{color: "#405FF2", textDecoration: "none"}}
+                            >
+                                0260759999
+                            </a></span>
                         </p>
                         <p
                             style={{
